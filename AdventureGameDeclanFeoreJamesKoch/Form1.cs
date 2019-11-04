@@ -24,10 +24,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
         public Form1()
         {
             InitializeComponent();
-
-            //button 
             
-
             //display initial message and options
             outputLabel.Text = "You want to go to your friend's house. What mode of transportation will you use.";
             redLabel.Text = "Walk";
@@ -112,15 +109,15 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     redLabel.Text = "Long Safe Way";
                     blueLabel.Text = "Short Scary Way";
                     yellowLabel.Text = "";
+                    mLabel.Visible = false;
                     sceneImage.BackgroundImage = Properties.Resources.case_1_real;
-
-
                     break;
                 case 2:
                     outputLabel.Text = "What car do you drive? 2002 Honda Civic or 2019 Ferrari";
                     redLabel.Text = "2002 Honda Civic";
                     blueLabel.Text = "2019 Ferraria";
                     yellowLabel.Text = "";
+                    mLabel.Visible = false;
                     sceneImage.BackgroundImage = Properties.Resources.case_2;
                     break;
                 case 3:
@@ -136,8 +133,6 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     blueLabel.Text = "Check it out";
                     yellowLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.case_4;
-
-
                     break;
                 case 5:
                     outputLabel.Text = "Do you go get food on your way to your friends, or skip food and go right to your friends?";
@@ -149,9 +144,9 @@ namespace AdventureGameDeclanFeoreJamesKoch
                 case 6:
                     int chance = randGen.Next(1, 11);
                     if (chance < 8)
-                    { outputLabel.Text = "You chose the Ferrari!"; redLabel.Text = "Continue"; blueLabel.Text = ""; yellowLabel.Text = ""; }
+                    { outputLabel.Text = "You chose the Ferrari!"; redLabel.Text = "Continue"; blueLabel.Text = ""; yellowLabel.Text = ""; nLabel.Enabled = false; mLabel.Enabled = false;}
                     else
-                    { outputLabel.Text = "You crashed the car and died."; redLabel.Text = "Play again"; blueLabel.Text = "Exit"; yellowLabel.Text = ""; }
+                    { outputLabel.Text = "You crashed the car and died."; redLabel.Text = "Play again"; blueLabel.Text = "Exit"; yellowLabel.Text = ""; mLabel.Enabled = false;}
                     sceneImage.BackgroundImage = Properties.Resources.case_6;
                     break;
                 case 7:
@@ -193,6 +188,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     outputLabel.Text = "You make it too your friends house nice and hydrated.";
                     redLabel.Text = "Continue";
                     blueLabel.Text = "";
+                    nLabel.Visible = false;
                     yellowLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.case_12;
                     break;
@@ -214,6 +210,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     outputLabel.Text = "You continue walking to your friends house, but the goat stares at you menacingly.";
                     redLabel.Text = "Continue";
                     blueLabel.Text = "";
+                    nLabel.Visible = false;
                     yellowLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.case_15_real;
                     break;
@@ -223,14 +220,13 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     blueLabel.Text = "BLT";
                     yellowLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.case_16_realerson;
-
                     break;
                 case 17:
                     outputLabel.Text = "Do you get Popcorn chicken or Chicken tenders? ";
                     redLabel.Text = "Popcorn chicken";
                     blueLabel.Text = "Chicken tenders";
                     yellowLabel.Text = "";
-                        sceneImage.BackgroundImage = Properties.Resources.case_17;
+                    sceneImage.BackgroundImage = Properties.Resources.case_17;
                     break;
                 case 18:
                     outputLabel.Text = "You die of mercury poisoning! Play again?";
@@ -243,6 +239,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     outputLabel.Text = "After eating you drive to your friends.";
                     redLabel.Text = "Continue";
                     blueLabel.Text = "";
+                    nLabel.Visible = false;
                     yellowLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.case_18;
                     break;
@@ -250,6 +247,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     outputLabel.Text = "The popcorn chicken is so good and filling!";
                     redLabel.Text = "Continue";
                     blueLabel.Text = "";
+                    nLabel.Visible = false;
                     yellowLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.Shridar_Patel;
                     break;
@@ -264,6 +262,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     outputLabel.Text = "When you get there, do you walk right in or knock on the door first?";
                     redLabel.Text = "Walk right in";
                     blueLabel.Text = "Knock first";
+                    nLabel.Visible = true;
                     yellowLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.case_99;
                     break;

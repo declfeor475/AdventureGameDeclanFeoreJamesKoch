@@ -201,9 +201,9 @@ namespace AdventureGameDeclanFeoreJamesKoch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap case_16_realerson {
+        internal static System.Drawing.Bitmap case_16_sub {
             get {
-                object obj = ResourceManager.GetObject("case_16_realerson", resourceCulture);
+                object obj = ResourceManager.GetObject("case_16_sub", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -233,7 +233,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     redLabel.Text = "Tuna sub";
                     blueLabel.Text = "BLT";
                     yellowLabel.Text = "";
-                    sceneImage.BackgroundImage = Properties.Resources.case_16_realerson;
+                    sceneImage.BackgroundImage = Properties.Resources.case_16_sub;
                     break;
                 case 17:
                     outputLabel.Text = "Do you get Popcorn chicken or Chicken tenders? ";

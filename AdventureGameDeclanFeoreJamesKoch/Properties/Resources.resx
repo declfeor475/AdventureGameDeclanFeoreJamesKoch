@@ -163,8 +163,8 @@
   <data name="case_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\case 16.webp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="case_16_realerson" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\case 16 realerson.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="case_16_sub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\case 16 sub.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="case_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\case 17.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

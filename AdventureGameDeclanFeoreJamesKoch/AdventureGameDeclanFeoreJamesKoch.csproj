@@ -162,5 +162,17 @@
   <ItemGroup>
     <None Include="Resources\Shridar Patel.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\188182__erokia__goat-sound-2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\237375__squareal__car-crash.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\345559__inspectorj__car-engine-off-a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case-6.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

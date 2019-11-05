@@ -20,6 +20,9 @@ namespace AdventureGameDeclanFeoreJamesKoch
 
         // random number generator
         Random randGen = new Random();
+        SoundPlayer carCrash = new SoundPlayer(Properties.Resources.car_crash);
+        SoundPlayer carEngine = new SoundPlayer(Properties.Resources.car_engine);
+        SoundPlayer goatScream = new SoundPlayer(Properties.Resources.goat_scream);
 
         public Form1()
         {
@@ -44,7 +47,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                 else if (scene == 3) { scene = 7; }
                 else if (scene == 4) { scene = 8; }
                 else if (scene == 5) { scene = 10; }
-                else if (scene == 6) { scene = 5; }
+                else if (scene == 6) { scene = 0; }
                 else if (scene == 7) { scene = 12; }
                 else if (scene == 8) { scene = 0; }
                 else if (scene == 9) { scene = 14; }
@@ -90,7 +93,8 @@ namespace AdventureGameDeclanFeoreJamesKoch
             }
             else if (e.KeyCode == Keys.M) //yellow button press
             {
-                scene = 0;
+                if (scene == 0) { scene = 0; }
+                else if (scene == 6) { scene = 5; }
             }
 
             /// Display text and game options to screen based on the current scene
@@ -101,8 +105,9 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     redLabel.Text = "Walk";
                     blueLabel.Text = "Drive";
                     yellowLabel.Text = "Skip driving, stay inside, and don't hangout with anyone";
+                    bLabel.Visible = true;
+                    mLabel.Visible = true;
                     sceneImage.BackgroundImage = Properties.Resources.case_0;
-
                     break;
                 case 1:
                     outputLabel.Text = "Do you walk the long safe way or the short scary way?";
@@ -119,6 +124,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     yellowLabel.Text = "";
                     mLabel.Visible = false;
                     sceneImage.BackgroundImage = Properties.Resources.case_2;
+                    carEngine.Play();
                     break;
                 case 3:
                     outputLabel.Text = "It is taking too long just walking and you become impatient. Do you begin to run or continue walking?";
@@ -138,21 +144,28 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     outputLabel.Text = "Do you go get food on your way to your friends, or skip food and go right to your friends?";
                     redLabel.Text = "Get food";
                     blueLabel.Text = "Skip food";
+                    bLabel.Visible = true;
+                    nLabel.Visible = true;
+                    mLabel.Visible = false;
                     yellowLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.case_5;
                     break;
                 case 6:
                     int chance = randGen.Next(1, 11);
                     if (chance < 8)
-                    { outputLabel.Text = "You chose the Ferrari!"; redLabel.Text = "Continue"; blueLabel.Text = ""; yellowLabel.Text = ""; nLabel.Enabled = false; mLabel.Enabled = false;}
-                    else
-                    { outputLabel.Text = "You crashed the car and died."; redLabel.Text = "Play again"; blueLabel.Text = "Exit"; yellowLabel.Text = ""; mLabel.Enabled = false;}
-                    sceneImage.BackgroundImage = Properties.Resources.case_6;
+                    { outputLabel.Text = "You chose the Ferrari!"; yellowLabel.Text = "Continue"; blueLabel.Text = ""; redLabel.Text = ""; mLabel.Visible = true; nLabel.Visible = false; bLabel.Visible = false; sceneImage.BackgroundImage = Properties.Resources.case_6_real; }
+                    else if (chance >= 8)
+                    { outputLabel.Text = "You crashed the car and died."; redLabel.Text = "Play again"; blueLabel.Text = "Exit"; yellowLabel.Text = ""; mLabel.Enabled = false; sceneImage.BackgroundImage = Properties.Resources.case_6;
+                        carCrash.Play();
+                    }
                     break;
                 case 7:
                     outputLabel.Text = "You get thirsty and see a puddle on the road. Do you take a drink from it?";
                     redLabel.Text = "Yes";
                     blueLabel.Text = "No";
+                    bLabel.Visible = true;
+                    nLabel.Visible = true;
+                    mLabel.Visible = false;
                     yellowLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.case_7;
                     break;
@@ -169,6 +182,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.case_9;
+                    goatScream.Play();
                     break;
                 case 10:
                     outputLabel.Text = "What food store do you go to? Subway or Louisiana Chicken?";

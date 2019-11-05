@@ -61,6 +61,24 @@ namespace AdventureGameDeclanFeoreJamesKoch.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream car_crash {
+            get {
+                return ResourceManager.GetStream("car crash", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream car_engine {
+            get {
+                return ResourceManager.GetStream("car engine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap case_0 {
@@ -293,6 +311,16 @@ namespace AdventureGameDeclanFeoreJamesKoch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap case_6_real {
+            get {
+                object obj = ResourceManager.GetObject("case_6_real", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap case_7 {
             get {
                 object obj = ResourceManager.GetObject("case_7", resourceCulture);
@@ -347,6 +375,15 @@ namespace AdventureGameDeclanFeoreJamesKoch.Properties {
             get {
                 object obj = ResourceManager.GetObject("case4", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream goat_scream {
+            get {
+                return ResourceManager.GetStream("goat scream", resourceCulture);
             }
         }
         

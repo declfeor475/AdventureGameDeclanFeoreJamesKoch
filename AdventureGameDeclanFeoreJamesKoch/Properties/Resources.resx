@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="car crash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\237375__squareal__car-crash.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="car engine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\345559__inspectorj__car-engine-off-a.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="case18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\case18.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,6 +199,9 @@
   <data name="case_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\case 6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="case_6_real" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\case-6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="case_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\case 7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -204,6 +213,9 @@
   </data>
   <data name="case_99" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\case 99.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goat scream" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\188182__erokia__goat-sound-2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Shridar_Patel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shridar Patel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -20,9 +20,12 @@ namespace AdventureGameDeclanFeoreJamesKoch
 
         // random number generator
         Random randGen = new Random();
+
+        //all sounds in the game
         SoundPlayer carCrash = new SoundPlayer(Properties.Resources.car_crash);
         SoundPlayer carEngine = new SoundPlayer(Properties.Resources.car_engine);
         SoundPlayer goatScream = new SoundPlayer(Properties.Resources.goat_scream);
+        SoundPlayer dramatic = new SoundPlayer(Properties.Resources.dramatic);
 
         public Form1()
         {
@@ -66,6 +69,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                 else if (scene == 99) { scene = 100; }
                 else if (scene == 100) { scene = 0; }
                 else if (scene == 101) { scene = 0; }
+                else if (scene == 102) { scene = 0; }
             }
             else if (e.KeyCode == Keys.N) //blue button press
             {
@@ -90,6 +94,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                 else if (scene == 99) { scene = 101; }
                 else if (scene == 100) { this.Close(); }
                 else if (scene == 101) { this.Close(); }
+                else if (scene == 102) { this.Close(); }
             }
             else if (e.KeyCode == Keys.M) //yellow button press
             {
@@ -115,6 +120,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     blueLabel.Text = "Short Scary Way";
                     yellowLabel.Text = "";
                     mLabel.Visible = false;
+                    dramatic.Play();
                     sceneImage.BackgroundImage = Properties.Resources.case_1_real;
                     break;
                 case 2:
@@ -199,7 +205,7 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     sceneImage.BackgroundImage = Properties.Resources.case_11;
                     break;
                 case 12:
-                    outputLabel.Text = "You make it too your friends house nice and hydrated.";
+                    outputLabel.Text = "You make it to your friends house nice and hydrated.";
                     redLabel.Text = "Continue";
                     blueLabel.Text = "";
                     nLabel.Visible = false;
@@ -288,11 +294,18 @@ namespace AdventureGameDeclanFeoreJamesKoch
                     sceneImage.BackgroundImage = Properties.Resources.case_100;
                     break;
                 case 101:
-                    outputLabel.Text = "You have fun with your friend! Play again?";
+                    outputLabel.Text = "You have fun with your friend! Thanks for playing! Play again?";
                     redLabel.Text = "Play again";
                     blueLabel.Text = "Exit";
                     yellowLabel.Text = "";
                     sceneImage.BackgroundImage = Properties.Resources.case_101;
+                    break;
+                case 102:
+                    outputLabel.Text = "You're boring! Play again?";
+                    redLabel.Text = "Play again";
+                    blueLabel.Text = "Exit";
+                    yellowLabel.Text = "";
+                    mLabel.Visible = false;
                     break;
                 default:
                     break;

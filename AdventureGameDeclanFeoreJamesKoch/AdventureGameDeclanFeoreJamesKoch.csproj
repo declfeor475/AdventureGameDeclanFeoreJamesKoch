@@ -177,5 +177,8 @@
   <ItemGroup>
     <None Include="Resources\case 16 sub.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\76061__digifishmusic__dramatic5.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

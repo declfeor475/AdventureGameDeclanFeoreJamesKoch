@@ -381,6 +381,15 @@ namespace AdventureGameDeclanFeoreJamesKoch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream dramatic {
+            get {
+                return ResourceManager.GetStream("dramatic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream goat_scream {
             get {
                 return ResourceManager.GetStream("goat scream", resourceCulture);
